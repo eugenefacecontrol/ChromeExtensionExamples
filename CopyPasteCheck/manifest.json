@@ -1,0 +1,19 @@
+{
+    "name": "Copy/Paste check",
+    "version": "1.0",
+    "description": "Build an Extension!",
+    "permissions": ["clipboardRead", "clipboardWrite"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistant": false
+    },
+    "page_action": {
+        "default_popup": "options.html"
+    },
+    "externally_connectable": {
+        "matches": [
+          "http://127.0.0.1:5500/*"
+        ]
+      },
+    "manifest_version": 2
+  }
